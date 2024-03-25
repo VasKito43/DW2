@@ -2,7 +2,7 @@
 
 Em JavaScript, uma variável é um contêiner nomeado para armazenar dados. Você pode pensar nelas como caixas onde você pode colocar informações para uso posterior. Ao contrário de algumas linguagens de programação, como C ou Java, em JavaScript, você não precisa declarar explicitamente o tipo de uma variável ao criá-la. Em vez disso, você simplesmente usa a palavra-chave let, const ou var, seguida pelo nome da variável e, opcionalmente, atribui um valor a ela.
 
-### let:
+### let
 
 - Âmbito (escopo): Local (bloco de código)
 - Redeclaração: Não permite redeclarar a variável com o mesmo nome dentro do mesmo escopo.
@@ -16,7 +16,8 @@ if (true) {
 
 console.log(mensagem) // Erro: mensagem não está definida fora do bloco 'if'
 ```
-### var:
+
+### var
 
 - Âmbito: Global ou de função, pode  acessar em qualquer parte do codigo.
 - Redeclaração: Permite redeclarar a variável com o mesmo nome dentro do mesmo escopo.
@@ -35,7 +36,7 @@ console.log(fruta) // Laranja (var pode ser acessada de fora do bloco)
 
 ```
 
-### const:
+### const
 
 - Âmbito: Local (bloco de código)
 - Redeclaração: Não permite redeclarar a variável com o mesmo nome dentro do mesmo escopo.
@@ -54,7 +55,7 @@ console.log(PI) // 3
 
 Os tipos primitivos são as formas de armazenar um dados que podem ser manipulados no programa, esses dados podem ser como String, Number, Boolean, Null e Undefined.
 
-### String:
+### String
 
 Uma string é uma sequência de caracteres, como letras, números, ou símbolos, que são usados para representar texto. Elas podem ser definidas utilizando aspas simples (') ou duplas ("). 
 
@@ -63,13 +64,17 @@ let mensagem = 'Ola Mundo'
 let nome = "Gabriel"
 ```
 
-### Number:
+### Number
+
 O tipo number é usado para representar valores numéricos, sejam inteiros ou de ponto flutuante. 
+
 ```javascript
 let inteiro = 12
 let flutuante = 3,14
 ```
-### Boolean:
+
+### Boolean
+
 Boolean é um tipo que tem apenas dois valores possíveis: true ou false.
 
 ```javascript
