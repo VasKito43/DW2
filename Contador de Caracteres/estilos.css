@@ -1,0 +1,48 @@
+body {
+    background-color: hsl(240, 100%, 65%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 50vw;
+    height: 60vh;
+    top: 10%;
+    left: 25%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+}
+h1{
+    color: rgb(43, 56, 177);
+    
+}
+.campos-container {
+    width: 45vw;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#input {
+    width: 40vw;
+    height: 25vh;
+    border-radius: 10px;
+    border: solid black 2px;
+
+
+}
+label {
+    margin-right: 70vh;
+}
+button {
+    background-color: rgb(43, 56, 177);
+    color: white;
+    border-radius: 10px;
+    height: 5vh;
+    width: 10vw;
+    font-size: 12pt;
+}
