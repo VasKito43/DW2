@@ -6,21 +6,26 @@ inputTexto.addEventListener("input", contador)
 
 btnContar.addEventListener("click", botao)
 
+
+let identificador = "caracter"
+
+
 function contador(){
-    if (btnContar.innerText === "Contar Palavras"){
+    if (identificador === "caracter"){
         divContador.innerText = `${String(inputTexto.value).length} caracteres`
-        console.log("meu  pato ".trim().split(/\s+/).length)
     } else {
         divContador.innerText = `${String(inputTexto.value).trim().split(/\s+/).length} palavras`
     }
 }
 
 function botao(){
-    if (btnContar.innerText === "Contar Palavras"){
+    if (identificador === "caracter"){
         btnContar.innerText = "Contar Caracteres"
+        identificador = "palavra"
         contador()
     } else {
         btnContar.innerText = "Contar Palavras"
+        identificador = "caracter"
         contador()
     }
 }
