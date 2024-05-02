@@ -10,7 +10,7 @@ h2{
 
 .container{
     width: 50vw;
-    height: 40vh;
+    height: 50vh;
     top: 25%;
     left: 25%;
     position: absolute;
@@ -28,7 +28,7 @@ h2{
     align-items: stretch;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 21vw;
+    width: 23vw;
     height: 10vh;
 }
 
@@ -57,7 +57,7 @@ h2{
 
 #link {
     margin-top: 4px;
-    width: 20vw;
+    width: 21vw;
     height: 4vh;    
     border: solid rgb(7, 7, 7) 0px;
     border-radius: 10px;
@@ -73,7 +73,7 @@ h2{
 #txt{
     color: white;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     body{
         background-color: white;
     }
