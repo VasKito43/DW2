@@ -26,9 +26,10 @@ h2{
 .container2{
     display: flex;
     align-items: stretch;
-    justify-content: space-between;
-    width: 17vw;
-    height: 5vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 21vw;
+    height: 10vh;
 }
 
 .btn{
@@ -46,9 +47,24 @@ h2{
 
 #input{
     height: 4.2vh;
-    width: 10vw;
+    width: 12vw;
     border-radius: 10px;
     text-align: center;
     line-height: 4.2vh;
+    border: solid rgb(7, 7, 7) 2px;
+    font-size: 10pt;
+}
 
+#link {
+    width: 21vw;
+    height: 4vh;    
+    border: solid rgb(7, 7, 7) 0px;
+    border-radius: 10px;
+    font-size: 10pt;
+    line-height: 4.2vh;
+
+}
+
+#wimg{
+    width: 30px;
 }

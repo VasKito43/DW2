@@ -1,19 +1,43 @@
-const inputTexto = document.querySelector("#input")
+var inputTexto = document.querySelector("#input")
+var divLink = document.querySelector("#link")
+var telefone = ""
 
-console.log(inputTexto)
 
+inputTexto.addEventListener("input", atualizaTelefone)
+divLink.addEventListener("click", copiaLink)
 
-document.addEventListener("keydown", (evento) => {
-    let teclapressionada =  evento.key
-    let numeros = "0123456789"
+function atualizaTelefone(){
+    telefone =  inputTexto.value.replace(/\D/g, "")
+    console.log(telefone)
+    if (telefone.length == 0) {
+        inputTexto.value  = ""
+    }else if (telefone.length == 1){
+        inputTexto.value = "(" + telefone
+    }else if (telefone.length < 8 && telefone.length >= 3){
+        inputTexto.value = "(" + telefone.slice(0, 2) + ")" + `${telefone.slice(2, 8)}`
+    } else if (telefone.length >= 8 && telefone.length < 12){
+        inputTexto.value = "(" + telefone.slice(0, 2) + ")" + `${telefone.slice(2, 7)}` + "-" + `${telefone.slice(7, 11)}`
+    } 
+}
 
-    if (numeros.includes(teclapressionada)){
+function geraLink(){
+    if (telefone.length == 11){
+        divLink.style.borderWidth = "2px";
+        divLink.innerText = `https://wa.me//55${telefone}`
+    } else {
+        alert("Telefone Invalido")
     }
-    // if (numeros.includes(teclapressionada)){
-    //     adicionaNumero(calculadora, teclapressionada)
-    // } else if (operadores.includes(teclapressionada)){
-    //     escolheOperador(calculadora, teclapressionada == "/" ? "÷": teclapressionada)
-    // } else if (teclapressionada == "Enter"){
-        
-    // }
-});
+}
+
+function copiaLink(){
+    navigator.clipboard.writeText(divLink.innerText);
+    alert("Link Copiado")
+}
+
+function abreGuia(){
+    if (telefone.length == 11){
+        window.open(`https://wa.me//55${telefone}`, "_blank")
+    } else {
+        alert("Telefone Invalido")
+    }
+}
