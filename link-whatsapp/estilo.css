@@ -56,7 +56,8 @@ h2{
 }
 
 #link {
-    width: 21vw;
+    margin-top: 4px;
+    width: 20vw;
     height: 4vh;    
     border: solid rgb(7, 7, 7) 0px;
     border-radius: 10px;
@@ -67,4 +68,26 @@ h2{
 
 #wimg{
     width: 30px;
+}
+
+#txt{
+    color: white;
+}
+@media only screen and (max-width: 750px) {
+    body{
+        background-color: white;
+    }
+
+    #input{
+        width: 22vw;
+    }
+
+    .container2{
+        width: 40vw;
+    }
+    #link{
+        margin-top: 4px;
+        width: 40vw;
+
+    }
 }
