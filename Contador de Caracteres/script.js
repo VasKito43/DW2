@@ -1,4 +1,6 @@
 const inputTexto = document.querySelector("#input")
+
+console.log(inputTexto)
 const divContador = document.querySelector("[txt-contador]")
 const btnContar = document.querySelector("[btn-contar")
 
