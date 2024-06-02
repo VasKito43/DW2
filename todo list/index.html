@@ -11,16 +11,22 @@
         <div class="titulo"><img src="logo.png" id="logo"></div>
         <form>
             <input type="text" id="input" placeholder="Adicione uma nova tarefa">
-            <button id="button">criar <img src="plus.png" id="plus"></button>
+            <button type="button" id="button">criar <img src="plus.png" id="plus"></button>
             
         </form>
-        <div class="tarefas">
+        <div id="tarefas">
             <div id="tarefas_criadas">Tarefas criadas<p id="num_tc">0</p>
             </div>
             <div id="concluidas">Concluidas
                 <div id="num_con"><p id="n_tarefas_concluidas">0</p> <p id="de">de</p> <p id="n_tarefas">0</p></div>
+                
             </div>
         </div>
+        <ul id="lista">
+            <!-- <li><img src="check.png" class="simbolo">vaskito <button><img src="trash.png" class="simbolo"></button></li> -->
+            <li>vaskito</li>
+        </ul>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

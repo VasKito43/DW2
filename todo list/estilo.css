@@ -11,7 +11,7 @@ font-family: Arial, Helvetica, sans-serif;    background-color: #1A1A1A;
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
@@ -46,11 +46,11 @@ font-family: Arial, Helvetica, sans-serif;    background-color: #1A1A1A;
     
     
 }
-.tarefas{
-    height: 70vh;
+#tarefas{
     width: 48vw;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 #logo{
     width: 10vw;
@@ -58,6 +58,8 @@ font-family: Arial, Helvetica, sans-serif;    background-color: #1A1A1A;
 }
 #plus{
     width: 1vw;
+    vertical-align: middle;
+
 }
 #tarefas_criadas{
     color: #4EA8DE;
@@ -111,4 +113,39 @@ font-family: Arial, Helvetica, sans-serif;    background-color: #1A1A1A;
     padding-left: 0.6vh;
     padding-right: 0.6vh;
 
+}
+
+#lista{
+    width: 48vw;
+
+}
+.completado{
+    background-color: red;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    width: 48vw;
+    height: 4vh;
+    background: #262626;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border: 0.1px solid #757575;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+    text-align: left;
+    font-size: 10pt;
+}
+
+.simbolo{
+    width: 3vh;
+    vertical-align: middle;
+}
+.texto{
+    width: 30vw;
+    background-color: #8284FA;
 }
