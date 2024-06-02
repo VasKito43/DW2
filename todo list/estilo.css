@@ -4,7 +4,6 @@ font-family: Arial, Helvetica, sans-serif;    background-color: #1A1A1A;
     margin: 0px;
     text-align: center;
     width: 100vw;
-    height: 100vh;
 }
 
 .container{
@@ -32,7 +31,7 @@ font-family: Arial, Helvetica, sans-serif;    background-color: #1A1A1A;
     border: none;
     line-height: 4.2vh;
     background-color: #262626;
-
+    color: white;
 }
 #button{
     width: 8vw;
@@ -116,11 +115,14 @@ font-family: Arial, Helvetica, sans-serif;    background-color: #1A1A1A;
 }
 
 #lista{
-    width: 48vw;
-
+    margin-top: 4vh;
+    margin-left: 4vh;
+    width: 50vw;
+    max-height: 60vh;
+    overflow-y: auto;
 }
 .completado{
-    background-color: red;
+    text-decoration: line-through;
 }
 ul {
     list-style-type: none;
@@ -142,10 +144,36 @@ li {
 }
 
 .simbolo{
+    padding-left: 2vh;
+    padding-right: 2vh;
     width: 3vh;
     vertical-align: middle;
 }
 .texto{
     width: 30vw;
     background-color: #8284FA;
+}
+.btn_del{
+    background-color: #262626;
+    border: none;
+    float: right;
+    padding-right: 2vh;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4EA8DE; /* Cor da alça da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333333; /* Cor de fundo da barra de rolagem */
+}
+
+#empty{
+    width: 50vw;
+    top: 50vh;
 }
