@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 criar(item.tarefa);
             });
         })
-        .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
+        .catch(error => console.error('Erro:', error));
 });
 
 function input(){
@@ -53,7 +53,8 @@ function input(){
 
 
 function criar(nome_tarefa) {
-    let lista = document.querySelector("#lista")
+    if (nome_tarefa.length < 300){
+        let lista = document.querySelector("#lista")
 
     if (num_criadas.textContent == 0){
         del_img()
@@ -108,6 +109,9 @@ function criar(nome_tarefa) {
     novo_item.appendChild(btn_del)
     lista.appendChild(novo_item)
 
+    }else{
+        alert("Texto da tarefa muito grande")
+    }
 
 }
 
