@@ -1,179 +1,195 @@
 body{
-font-family: Arial, Helvetica, sans-serif;    background-color: #1A1A1A;
-    color: white;
-    margin: 0px;
-    text-align: center;
-    width: 100vw;
-}
-
-.container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-}
-
-.titulo{
-    width: 100vw;
-    height: 15vh;
-    background-color: #0D0D0D;
+    font-family: Arial, Helvetica, sans-serif;    background-color: #1A1A1A;
+        color: white;
+        margin: 0rem;
+        text-align: center;
+        width: 100vw;
+    }
+    
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+    }
+    
+    .titulo{
+        width: 100vw;
+        height: 15vh;
+        background-color: #0D0D0D;
+        
+        
+    }
+    #input{
+        width: 40vw;
+        height: 7vh;
+        border-radius: .625rem;
+        border: none;
+        line-height: 4.2vh;
+        background-color: #262626;
+        color: white;
+    }
+    #button{
+        width: 8vw;
+        height: 7.2vh;
+        border-radius: .625rem;
+        border: none;
+        background-color: #1E6F9F;
+        color: white;
+        font-size: 14pt;
+        
+        
+        
+    }
+    #tarefas{
+        width: 48vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #logo{
+        width: 10vw;
+        margin-top: 2.5vh;
+    }
+    #plus{
+        width: 1vw;
+        vertical-align: middle;
+    
+    }
+    #tarefas_criadas{
+        color: #4EA8DE;
+        width: 9vw;
+        height: 2vh;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    #concluidas{
+        width: 9vw;
+        height: 2vh;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        color: #8284FA;
+    
+    }
+    #num_tc{
+        color: white;
+        background-color: #333333;
+        padding-left: 0.6vh;
+        padding-right: 0.6vh;
+        border-radius: .5rem;
+        
+    }
+    #num_con{
+        color: white;
+        /* background-color: #333333; */
+        width: 3.4vw;
+        height: 2vh;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    
+    #n_tarefas{
+        background-color: #333333;
+        padding-right: 0.6vh;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+    #n_tarefas_concluidas{
+        background-color: #333333;
+        padding-left: 0.6vh;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+    }
+    #de{
+        background-color: #333333;
+        padding-left: 0.6vh;
+        padding-right: 0.6vh;
+    
+    }
+    
+    #lista{
+        margin-top: 4vh;
+        margin-left: 4vh;
+        width: 50vw;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+    .completado{
+        text-decoration: line-through;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        width: 48vw;
+        height: 4vh;
+        background: #262626;
+        padding-top: .625rem;
+        padding-bottom: .625rem;
+        margin: .3125rem 0;
+        border: .0063rem solid #757575;
+        border-radius: .25rem;
+        transition: background 0.3s, color 0.3s;
+        text-align: left;
+        font-size: 10pt;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    .simbolo{
+        padding-left: 2vh;
+        padding-right: 2vh;
+        width: 3vh;
+        vertical-align: middle;
+    }
+    .texto{
+        width: 30vw;
+        background-color: #8284FA;
+    }
+    .btn_del{
+        background-color: #262626;
+        border: none;
+        float: right;
+        padding-right: 2vh;
+    }
     
     
-}
-#input{
-    width: 40vw;
-    height: 7vh;
-    border-radius: 10px;
-    border: none;
-    line-height: 4.2vh;
-    background-color: #262626;
-    color: white;
-}
-#button{
-    width: 8vw;
-    height: 7.2vh;
-    border-radius: 10px;
-    border: none;
-    background-color: #1E6F9F;
-    color: white;
-    font-size: 14pt;
+    ::-webkit-scrollbar {
+        width: .625rem; /* Largura da barra de rolagem */
+    }
     
+    ::-webkit-scrollbar-thumb {
+        background-color: #4EA8DE; /* Cor da alça da barra de rolagem */
+    }
     
+    ::-webkit-scrollbar-track {
+        background-color: #333333; /* Cor de fundo da barra de rolagem */
+    }
     
-}
-#tarefas{
-    width: 48vw;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-#logo{
-    width: 10vw;
-    margin-top: 2.5vh;
-}
-#plus{
-    width: 1vw;
-    vertical-align: middle;
-
-}
-#tarefas_criadas{
-    color: #4EA8DE;
-    width: 9vw;
-    height: 2vh;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-#concluidas{
-    width: 9vw;
-    height: 2vh;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    color: #8284FA;
-
-}
-#num_tc{
-    color: white;
-    background-color: #333333;
-    padding-left: 0.6vh;
-    padding-right: 0.6vh;
-    border-radius: 8px;
+    .empty{
+        width: 50vw;
+        top: 50vh;
+    }
     
-}
-#num_con{
-    color: white;
-    /* background-color: #333333; */
-    width: 3.4vw;
-    height: 2vh;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
+    #input, #button{
+        transform: translateY(-50%);
+    }
+    .div_li{
+        width: 40vh;
+        flex-grow: 1;
+        padding-left: 10px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
 
-#n_tarefas{
-    background-color: #333333;
-    padding-right: 0.6vh;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-#n_tarefas_concluidas{
-    background-color: #333333;
-    padding-left: 0.6vh;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-#de{
-    background-color: #333333;
-    padding-left: 0.6vh;
-    padding-right: 0.6vh;
-
-}
-
-#lista{
-    margin-top: 4vh;
-    margin-left: 4vh;
-    width: 50vw;
-    max-height: 60vh;
-    overflow-y: auto;
-}
-.completado{
-    text-decoration: line-through;
-}
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-li {
-    width: 48vw;
-    height: 4vh;
-    background: #262626;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 5px 0;
-    cursor: pointer;
-    border: 0.1px solid #757575;
-    border-radius: 4px;
-    transition: background 0.3s, color 0.3s;
-    text-align: left;
-    font-size: 10pt;
-}
-
-.simbolo{
-    padding-left: 2vh;
-    padding-right: 2vh;
-    width: 3vh;
-    vertical-align: middle;
-}
-.texto{
-    width: 30vw;
-    background-color: #8284FA;
-}
-.btn_del{
-    background-color: #262626;
-    border: none;
-    float: right;
-    padding-right: 2vh;
-}
-
-
-::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem */
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #4EA8DE; /* Cor da alça da barra de rolagem */
-}
-
-::-webkit-scrollbar-track {
-    background-color: #333333; /* Cor de fundo da barra de rolagem */
-}
-
-#empty{
-    width: 50vw;
-    top: 50vh;
-}
+    
