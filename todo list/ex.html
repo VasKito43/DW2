@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        var tarefa1 = {
+            estado: 'comcluido',
+            tarefa: 'tarefa 1'
+        }
+        var tarefa2 = {
+            estado: 'incomcluido',
+            tarefa: 'tarefa 2'
+        }
+
+        var nome = 'tarefa 2'
+        localStorage.setItem(tarefa1.tarefa, JSON.stringify(tarefa1));
+        localStorage.setItem(tarefa2.tarefa, JSON.stringify(tarefa2));
+        
+        // let myObj = { name: 'Gabriel', age: 25 };
+        // localStorage.setItem("gabriel", JSON.stringify(myObj));
+
+        let myItem = JSON.parse(localStorage.getItem(nome));
+        // console.log(myItem.tarefa)
+        for (let i = 0; i < localStorage.length; i++){
+            let key = localStorage.key(i);
+            let value = JSON.parse(localStorage.getItem(key));
+            console.log(value.estado);
+        }
+        localStorage.clear()
+
+    </script>
+</body>
+</html>
